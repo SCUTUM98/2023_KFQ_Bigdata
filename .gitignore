@@ -1,0 +1,7 @@
+*.csv
+*.png
+*.xlsx
+*.txt
+__pycache__/
+UHD/
+topics/
