@@ -34,3 +34,14 @@ def large_model_creation(model_kind):
     model.compile(optimizer='rmsprop', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     
     return model
+
+def get_relu_sigmoid(a,b,c):
+    model = Sequential([
+        layers.Dense(a, activation='relu'),
+        layers.Dense(b, activation='relu'),
+        layers.Dense(c, activation='sigmoid')
+    ])
+    
+    model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy'])
+    
+    return model
