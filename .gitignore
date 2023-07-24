@@ -6,3 +6,5 @@ __pycache__/
 UHD/
 topics/
 log/
+train/
+cats_vs_dogs_small/
